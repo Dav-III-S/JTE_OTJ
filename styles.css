@@ -1,0 +1,212 @@
+/* 
+11/4/2024 
+Stylesheet for On The Job
+Creating a visually appealing website for this project, aiming to provide a colorful experience for users.
+*/
+
+/* Global Styles */
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e4e2db;
+    margin: 0;
+    padding: 0;
+    font-family: "Turret Road", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 1em 2em;
+    color: #fff;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header img{
+    width: 7.0em;
+    border-radius: 1.0em;
+}
+
+header h1 {
+    margin-left: 10px;
+    font-size: 1.9em;
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-bar a {
+    color: #fff;
+    font-weight: 300;
+    transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+    color: #ff6347;
+}
+
+/* Main Sections */
+main {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+h2 {
+    color: #111;
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+}
+
+/* About Us */
+.about-us {
+    background-color: #eee;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery */
+.gallery {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.img-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    justify-content: center;
+}
+
+.img-gallery img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.img-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Products and Services */
+.prod-services {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.products,
+.services {
+    background-color: #fff;
+    padding: 1em 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.products h3,
+.services h4 {
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Contact Us */
+.contact-us {
+    background-color: #111;
+    color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us p {
+    margin-bottom: 1em;
+}
+
+/* Form */
+.form {
+    background-color: #f8f8f8;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: 500;
+    margin-top: 1em;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #111;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ff6347;
+}
+
+/* Socials */
+.socials ul {
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+.socials a {
+    color: #111;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #ff6347;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
