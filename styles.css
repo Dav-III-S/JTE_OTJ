@@ -1,19 +1,25 @@
-/* 
-11/4/2024 
-Stylesheet for On The Job
-Creating a visually appealing website for this project, aiming to provide a colorful experience for users.
-*/
+/* 11/4/2024 - Stylesheet for On The Job */
 
 /* Global Styles */
-*::before,
-*::after {
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color: #e4e2db;
+    --text-color: #111;
+    --accent-color: #ff6347;
+    --header-bg-color: #111;
+    --header-text-color: #fff;
+    --light-bg-color: #f8f8f8;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 body {
-    background-color: #e4e2db;
-    margin: 0;
-    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     font-family: "Turret Road", sans-serif;
     font-weight: 400;
     line-height: 1.6;
@@ -24,9 +30,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #111;
+    background-color: var(--header-bg-color);
     padding: 1em 2em;
-    color: #fff;
+    color: var(--header-text-color);
 }
 
 header a {
@@ -34,9 +40,9 @@ header a {
     color: inherit;
 }
 
-header img{
-    width: 7.0em;
-    border-radius: 1.0em;
+header img {
+    width: 7em;
+    border-radius: 1em;
 }
 
 header h1 {
@@ -50,13 +56,13 @@ header h1 {
 }
 
 .nav-bar a {
-    color: #fff;
+    color: var(--header-text-color);
     font-weight: 300;
     transition: color 0.3s;
 }
 
 .nav-bar a:hover {
-    color: #ff6347;
+    color: var(--accent-color);
 }
 
 /* Main Sections */
@@ -68,7 +74,7 @@ main {
 }
 
 h2 {
-    color: #111;
+    color: var(--text-color);
     margin-bottom: 0.5em;
     font-size: 1.8em;
 }
@@ -78,7 +84,7 @@ h2 {
     background-color: #eee;
     padding: 2em;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
 }
 
 /* Gallery */
@@ -89,13 +95,12 @@ h2 {
 
 .img-gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1em;
-    justify-content: center;
 }
 
 .img-gallery img {
-    width: 50%;
+    width: 100%;
     height: auto;
     border-radius: 8px;
     transition: transform 0.3s ease;
@@ -117,12 +122,12 @@ h2 {
     background-color: #fff;
     padding: 1em 2em;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
 }
 
 .products h3,
 .services h4 {
-    color: #333;
+    color: var(--text-color);
     font-weight: 500;
     margin-bottom: 0.5em;
 }
@@ -138,12 +143,12 @@ li {
 
 /* Contact Us */
 .contact-us {
-    background-color: #111;
-    color: #fff;
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
     padding: 2em;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
 }
 
 .contact-us p {
@@ -152,10 +157,10 @@ li {
 
 /* Form */
 .form {
-    background-color: #f8f8f8;
+    background-color: var(--light-bg-color);
     padding: 2em;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
 }
 
 form label {
@@ -172,18 +177,18 @@ form button {
     padding: 0.5em;
     border: 1px solid #ddd;
     border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 form button {
-    background-color: #111;
-    color: #fff;
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 form button:hover {
-    background-color: #ff6347;
+    background-color: var(--accent-color);
 }
 
 /* Socials */
@@ -194,13 +199,13 @@ form button:hover {
 }
 
 .socials a {
-    color: #111;
+    color: var(--text-color);
     font-weight: 500;
     transition: color 0.3s;
 }
 
 .socials a:hover {
-    color: #ff6347;
+    color: var(--accent-color);
 }
 
 /* Footer */
@@ -208,5 +213,5 @@ footer {
     text-align: center;
     padding: 1em;
     background-color: #333;
-    color: #fff;
+    color: var(--header-text-color);
 }

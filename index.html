@@ -12,9 +12,10 @@
 
 <body>
     <header>
-        <a href="#about-us" aria-label="Home">
+        <!-- Updated header with improved accessibility -->
+        <a href="#about-us" aria-label="Home" class="logo">
             <img src="/assets/images/favicon.jpg" alt="Respawn HQ Logo">
-            <h1>Respawn HQ</h1>
+            <h1><span>Respawn HQ</span></h1>
         </a>
         <nav class="nav-bar" aria-label="Main Navigation">
             <ul>
@@ -26,10 +27,11 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <!-- About us section -->
-        <section class="about-us">
-            <h2 id="about-us">About us</h2>
+        <section id="about-us" class="about-us">
+            <h2>About Us</h2>
             <p>Welcome to Respawn HQ! We are a small, dedicated team of computer and gaming repair specialists. Our
                 mission is to provide top-notch repair services for all your computer and gaming needs. Whether it's a
                 hardware issue, software problem, or just routine maintenance, we've got you covered.</p>
@@ -40,23 +42,25 @@
                 understand your specific needs and provide tailored solutions. Thank you for choosing Respawn HQ for
                 your repair needs. We look forward to serving you!</p>
         </section>
-        <!-- Gallery -->
-        <section class="gallery">
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
             <h2>Gallery</h2>
             <div class="img-gallery">
-                <img src="/assets/images/thisisengineering-IpTPp_aPbYE-unsplash.jpg" alt="A person soldering a motherboard" >
-                <img src="/assets/images/pexels-rethaferguson-3825581.jpg" alt="A person repairing a motherboard, with two tools in their hands" >
+                <img src="/assets/images/thisisengineering-IpTPp_aPbYE-unsplash.jpg" alt="A person soldering a motherboard">
+                <img src="/assets/images/pexels-rethaferguson-3825581.jpg" alt="A person repairing a motherboard, with two tools in their hands">
                 <img src="/assets/images/pexels-paduret-1476321.jpg" alt="A phone taken apart with the parts spread on the desk">
-                <img src="/assets/images/nathan-anderson-KHSPGJ3zP0M-unsplash.jpg" alt="A PC case with the parts inside" >
+                <img src="/assets/images/nathan-anderson-KHSPGJ3zP0M-unsplash.jpg" alt="A PC case with the parts inside">
                 <img src="/assets/images/pexels-lastly-719399.jpg" alt="A phone without the back cover showing battery and other parts">
                 <img src="/assets/images/daniel-hatcher-zPHftoPajis-unsplash.jpg" alt="A photo of a graphics card with the fan colored red">
             </div>
         </section>
-        <!-- Products and services -->
-        <section class="prod-services">
+
+        <!-- Products and Services Section -->
+        <section id="prod-services" class="prod-services">
             <h2>Our Products and Services</h2>
-            
-            <!-- Products -->
+
+            <!-- Products Section -->
             <section class="products">
                 <h3>Products</h3>
                 <ul>
@@ -67,8 +71,8 @@
                     <li>Laptop Charger - $25 - $50</li>
                 </ul>
             </section>
-            
-            <!-- Services -->
+
+            <!-- Services Section -->
             <section class="services">
                 <h3>Services</h3>
                 
@@ -79,7 +83,7 @@
                     <li>Battery Replacement - $50</li>
                     <li>Back Glass Replacement - $100</li>
                 </ul>
-                
+
                 <!-- Laptop Repair -->
                 <h4>Laptop Repair</h4>
                 <ul>
@@ -87,15 +91,15 @@
                     <li>Screen Repair - $150</li>
                     <li>Battery Replacement - $100</li>
                 </ul>
-                
+
                 <!-- PC Repair and Build -->
                 <h4>PC Repair and Build</h4>
                 <ul>
                     <li>Custom Build - Starting at $200</li>
                     <li>Hard Drive Replacement - $70</li>
-                    <li>Graphics Card Repair/ Replacement - Starting at $300</li>
+                    <li>Graphics Card Repair/Replacement - Starting at $300</li>
                 </ul>
-                
+
                 <!-- Console Repair -->
                 <h4>Console Repair</h4>
                 <ul>
@@ -105,6 +109,7 @@
                 </ul>
             </section>
         </section>
+
         <!-- Contact Us Section -->
         <section id="contact-us" class="contact-us">
             <h2>Contact Us</h2>
@@ -113,13 +118,14 @@
             <p>Email: support@example.com</p>
             <p>Address: 123 Repair St., Suite 100, Tech City, TC 12345</p>
         </section>
-        
-        <!-- Feedback Form -->
-        <div class="form">
+
+        <!-- Feedback Form Section -->
+        <section id="feedback-form" class="form">
+            <h2>Request a Product or Service</h2>
             <p>If there's something you need that we don't have, or if you have any suggestions, please fill out our form below. Thank you, we appreciate your input and business with us!</p>
             <form action="your_form_processing_script.php" method="post">
                 <fieldset>
-                    <legend>Request a Product or Service</legend>
+                    <legend>Request Form</legend>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
                     
@@ -132,11 +138,11 @@
                     <button type="submit">Submit</button>
                 </fieldset>
             </form>
-        </div>
-        
-        <!-- Social Media Links -->
+        </section>
+
+        <!-- Social Media Links Section -->
         <section id="socials" class="socials">
-            <!-- <h2>Our Socials</h2> -->
+            <h2>Our Socials</h2>
             <ul>
                 <li><a href="https://www.facebook.com" target="_blank" aria-label="Follow us on Facebook">Facebook</a></li>
                 <li><a href="https://www.twitter.com" target="_blank" aria-label="Follow us on Twitter">Twitter</a></li>
@@ -145,6 +151,7 @@
             </ul>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 Respawn HQ. All rights reserved.</p>
     </footer>
